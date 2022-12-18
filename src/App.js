@@ -5,7 +5,8 @@ import News from "./components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
-  const apiKey = process.env.REACT_APP_NEWS_API;
+  const apiKey = "194ee83c160645fdbdc4a8803216829a";
+  // const apiKey = process.env.REACT_APP_NEWS_API;
 
   return (
     <div>
