@@ -10,7 +10,7 @@ export default function Navbar() {
       <nav className="bg-white fixed top-0 left-0 right-0 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 shadow-md">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="/" className="flex items-center">
-            <img src={logo} className="h-6 mr-3 sm:h-9" alt="NewsMonkey" />
+            <img src={logo} className="h-10 mr-3 md:h-14" alt="NewsMonkey" />
           </a>
           <button
             onClick={() => setNavbar(!navbar)}
