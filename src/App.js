@@ -9,13 +9,13 @@ export default function App() {
 
   return (
     <div>
-      <Router basename="/NewsMonkey-App-Using-React">
+      <Router>
         <Navbar />
 
         <Routes>
           <Route
             exact
-            path="/NewsMonkey-App-Using-React"
+            path="/"
             element={
               <News
                 apiKey={apiKey}
