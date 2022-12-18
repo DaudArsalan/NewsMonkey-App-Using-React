@@ -14,7 +14,7 @@ export default function News(props) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  const UpdateNews = async () => {
+  const UpdateNews = () => {
     setTimeout(() => {
       const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${props.apiKey}&pagesize=${props.pageSize}&category=${props.category}&page=${page}`;
       fetch(url)
@@ -33,12 +33,12 @@ export default function News(props) {
     // eslint-disable-next-line
   }, []);
 
-  const fetchMoreData = async () => {
+  const fetchMoreData = () => {
     setTimeout(() => {
+      setPage(page + 1);
       const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
         props.apiKey
       }&pagesize=${props.pageSize}&category=${props.category}&page=${page + 1}`;
-      setPage(page + 1);
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
